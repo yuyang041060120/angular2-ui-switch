@@ -4,13 +4,7 @@ import { UiSwitchComponent } from '../src/ui-switch.component';
 
 @Component({
     selector: 'app',
-    templateUrl: 'app/app.html',
-    styles:[`
-        .container{
-            width: 960px;
-            margin: 0 auto;
-        }
-    `],
+    template: require('./app.html'),
     directives: [UiSwitchComponent]
 })
 export class AppComponent implements OnInit {

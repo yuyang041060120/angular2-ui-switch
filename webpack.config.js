@@ -22,6 +22,10 @@ module.exports = {
                 test: /\.ts$/,
                 exclude: /\.d\.ts$/,
                 loader: 'ts'
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw'
             }
         ]
     },
