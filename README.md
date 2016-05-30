@@ -33,8 +33,9 @@ export class AppComponent {
 
 ### checked
 
-type: *boolean*
-default: false
+> type: *boolean*
+
+> default: false
 
 ```html
 <ui-switch [checked]="true"></ui-switch>
@@ -42,8 +43,9 @@ default: false
 
 ### disabled
 
-type: *boolean*
-default: false
+> type: *boolean*
+
+> default: false
 
 ```html
 <ui-switch [disabled]="true"></ui-switch>
@@ -51,8 +53,9 @@ default: false
 
 ### change
 
-type: *event*
-default: noop
+> type: *event*
+
+> default: noop
 
 ```html
 <ui-switch (change)="enable = $event"></ui-switch>
@@ -60,8 +63,9 @@ default: noop
 
 ### size
 
-type: *string*
-default: medium
+> type: *string*
+
+> default: medium
 
 ```html
 <ui-switch size="large"></ui-switch>
@@ -73,8 +77,9 @@ default: medium
 
 ### color
 
-type: *string*
-default: rgb(100, 189, 99)
+> type: *string*
+
+> default: rgb(100, 189, 99)
 
 ```html
 <ui-switch color="red"></ui-switch>
