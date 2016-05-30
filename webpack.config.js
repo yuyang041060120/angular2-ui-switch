@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'source-map',
     output: {
         path: './dist',
-        filename: 'bundle.js',
+        filename: 'bundle.[chunkhash].js',
         publicPath: '/dist/'
     },
     resolve: {

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
-    "demo": "webpack --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
+    "demo": "webpack --config webpack.config.js --inline --progress --profile --colors --display-error-details --display-cached --content-base",
     "typings": "typings install",
     "tsc": "tsc --project . --declaration",
     "build": "npm run tsc",
