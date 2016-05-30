@@ -14,7 +14,7 @@ import { UiSwitchComponent } from '../src/ui-switch.component';
     directives: [UiSwitchComponent]
 })
 export class AppComponent implements OnInit {
-    enable: boolean = true;
+    enable: boolean = false;
 
     constructor() {
 

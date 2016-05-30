@@ -1,13 +1,15 @@
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 module.exports = {
     entry: {
-        main: './app/main'
+        main: './app/main',
+        vendor: './app/vendor'
     },
     devtool: 'source-map',
     output: {
         path: './dist',
-        filename: 'bundle.[chunkhash].js',
+        filename: 'bundle.js',
         publicPath: '/dist/'
     },
     resolve: {
@@ -29,6 +31,10 @@ module.exports = {
                 warnings: false
             },
             comments: false
+        }),
+        new CommonsChunkPlugin({
+            name: 'vendor',
+            filename: 'vendor.js'
         })
     ]
 };
