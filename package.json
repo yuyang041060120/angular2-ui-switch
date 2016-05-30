@@ -1,8 +1,8 @@
 {
   "name": "angular2-ui-switch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "switch button for angular2",
-  "main": "src/ui-switch.component.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@angular/common": "^2.0.0-rc.1",
     "@angular/compiler": "^2.0.0-rc.1",
-    "@angular/core": "2^.0.0-rc.1",
+    "@angular/core": "^2.0.0-rc.1",
     "@angular/http": "^2.0.0-rc.1",
     "@angular/platform-browser": "^2.0.0-rc.1",
     "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
