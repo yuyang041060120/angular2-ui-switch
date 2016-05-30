@@ -1,11 +1,12 @@
 {
   "name": "angular2-ui-switch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "switch button for angular2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
+    "demo": "webpack --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
     "typings": "typings install",
     "tsc": "tsc --project . --declaration",
     "build": "npm run tsc",
