@@ -3,17 +3,17 @@ const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 module.exports = {
     entry: {
-        main: './app/main',
-        vendor: './app/vendor'
+        main: './example/main',
+        vendor: './example/vendor',
+        polyfills: './example/polyfills'
     },
     devtool: 'source-map',
     output: {
-        path: './dist',
+        path: './example/dist',
         filename: 'bundle.js',
-        publicPath: '/dist/'
+        publicPath: '/example/dist/'
     },
     resolve: {
-        root: 'dist',
         extensions: ['', '.ts', '.js']
     },
     module: {
@@ -37,8 +37,8 @@ module.exports = {
             comments: false
         }),
         new CommonsChunkPlugin({
-            name: 'vendor',
-            filename: 'vendor.js'
+            names: ['vendor', 'polyfills'],
+            filename: '[name].js'
         })
     ]
 };

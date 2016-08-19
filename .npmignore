@@ -1,10 +1,8 @@
 .idea/
-app/
+example/
 node_modules/
-typings/
 .gitignore
 index.html
 tsconfig.json
-typings.json
 webpack.config.js
 logo.png

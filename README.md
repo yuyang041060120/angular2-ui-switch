@@ -15,18 +15,20 @@ npm install angular2-ui-switch --save
 # Usage
 
 ```javascript
-import { Component } from '@angular/core';
-import { UiSwitchComponent } from 'angular2-ui-switch';
+import { UiSwitchModule } from 'angular2-ui-switch'
+import { AppComponent } from './app.component';
 
-@Component({
-    selector: 'app',
-    template: `
-        <ui-switch></ui-switch>
-    `,
-    directives: [UiSwitchComponent]
+@NgModule({
+    imports: [BrowserModule, FormsModule, UiSwitchModule],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
-export class AppComponent {
+export class AppModule {
 }
+```
+
+```html
+<ui-switch></ui-switch>
 ```
 
 # Params
@@ -38,7 +40,8 @@ export class AppComponent {
 > default: false
 
 ```html
-<ui-switch [checked]="true"></ui-switch>
+<ui-switch checked></ui-switch>
+<ui-switch [checked]="false"></ui-switch>
 ```
 
 ### disabled
@@ -48,7 +51,14 @@ export class AppComponent {
 > default: false
 
 ```html
-<ui-switch [disabled]="true"></ui-switch>
+<ui-switch disabled></ui-switch>
+<ui-switch checked [disabled]="true"></ui-switch>
+```
+
+### two way binding
+
+```html
+<ui-switch [(ngModel)]="enable"></ui-switch>
 ```
 
 ### change
@@ -58,7 +68,7 @@ export class AppComponent {
 > default: noop
 
 ```html
-<ui-switch (change)="enable = $event"></ui-switch>
+<ui-switch (change)="onChange($event)"></ui-switch>
 ```
 
 ### size
@@ -68,11 +78,8 @@ export class AppComponent {
 > default: medium
 
 ```html
-<ui-switch size="large"></ui-switch>
-```
-
-```html
 <ui-switch size="small"></ui-switch>
+<ui-switch size="large"></ui-switch>
 ```
 
 ### color
