@@ -11,7 +11,7 @@ module.exports = {
     output: {
         path: './example/dist',
         filename: 'bundle.js',
-        publicPath: '/example/dist/'
+        publicPath: '/angular2-ui-switch/example/dist/'
     },
     resolve: {
         extensions: ['', '.ts', '.js']

@@ -31,6 +31,12 @@ export class AppModule {
 <ui-switch></ui-switch>
 ```
 
+# Two way binding
+
+```html
+<ui-switch [(ngModel)]="enable"></ui-switch>
+```
+
 # Params
 
 ### checked
@@ -53,12 +59,6 @@ export class AppModule {
 ```html
 <ui-switch disabled></ui-switch>
 <ui-switch checked [disabled]="true"></ui-switch>
-```
-
-### two way binding
-
-```html
-<ui-switch [(ngModel)]="enable"></ui-switch>
 ```
 
 ### change
