@@ -50,6 +50,28 @@ export class AppModule {
 <ui-switch [checked]="false"></ui-switch>
 ```
 
+### reverse - reverse switch color positions 
+
+> type: *boolean*
+
+> default: false
+
+```html
+<ui-switch reverse</ui-switch>
+<ui-switch [reverse]="true"></ui-switch>
+```
+
+### switchColor  
+
+> type: *string*
+
+> default: #fff 
+
+
+```html
+<ui-switch switchColor="#fcfcfc"></ui-switch>
+```
+
 ### disabled
 
 > type: *boolean*
