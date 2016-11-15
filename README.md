@@ -57,8 +57,7 @@ export class AppModule {
 > default: false
 
 ```html
-<ui-switch reverse</ui-switch>
-<ui-switch [reverse]="true"></ui-switch>
+<ui-switch reverse="true"></ui-switch>
 ```
 
 ### switchColor  
