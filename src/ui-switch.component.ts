@@ -17,9 +17,9 @@ const UI_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
   [class.switch-medium]="size === 'medium'"
   [class.switch-small]="size === 'small'"
   [style.background-color]="getColor()"
-  [style.border-color]="getColor(true)"
+  [style.border-color]="getColor('borderColor')"
   >
-  <small [style.background]="switchColor">
+  <small [style.background]="getColor('switchColor')">
   </small>
   </span>
   `,
@@ -141,9 +141,13 @@ export class UiSwitchComponent implements ControlValueAccessor {
   defaultBoColor: string = '#dfdfdf';
 
   getColor(boFlag) {
-    if (boFlag) return this.defaultBoColor;
-    if (this.reverse)  return !this.checked ? this.color : this.switchOffColor || this.defaultBgColor;
-    return this.checked ? this.color : this.switchOffColor || this.defaultBgColor;
+    if (flag === 'borderColor') return this.defaultBoColor;
+    if (flag === 'switchColor') {
+      if (this.reverse) return !this.checked ? this.switchColor: this.switchOffColor || this.switchColor;
+      return this.checked ? this.switchColor: this.switchOffColor || this.switchColor;
+    }
+    if (this.reverse)  return !this.checked ? this.color : this.defaultBgColor;
+    return this.checked ? this.color : this.defaultBgColor;
   }
 
   @HostListener('click')
