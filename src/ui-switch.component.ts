@@ -134,6 +134,7 @@ export class UiSwitchComponent implements ControlValueAccessor {
   @Input() size: string = 'medium';
   @Output() change = new EventEmitter<boolean>();
   @Input() color: string = 'rgb(100, 189, 99)';
+  @Input() switchOffColor: string = '';
   @Input() switchColor: string = '#fff';
   @Input() reverse: boolean = false;
   defaultBgColor: string = '#fff';
@@ -141,8 +142,8 @@ export class UiSwitchComponent implements ControlValueAccessor {
 
   getColor(boFlag) {
     if (boFlag) return this.defaultBoColor;
-    if (this.reverse)  return !this.checked ? this.color : this.defaultBgColor;
-    return this.checked ? this.color : this.defaultBgColor;
+    if (this.reverse)  return !this.checked ? this.color : this.switchOffColor || this.defaultBgColor;
+    return this.checked ? this.color : this.switchOffColor || this.defaultBgColor;
   }
 
   @HostListener('click')
