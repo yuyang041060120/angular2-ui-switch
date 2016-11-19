@@ -1,6 +1,6 @@
 {
   "name": "angular2-ui-switch-codengamer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "switch button for angular2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
