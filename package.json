@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --port 4000 --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
     "example": "webpack --config webpack.config.js --inline --progress --profile --colors --display-error-details --display-cached --content-base",
-    "tsc": "tsc --rootDir src --outDir dist --declaration",
+    "tsc": "tsc",
     "prebuild": "rimraf dist",
     "build": "npm run tsc",
     "prepublish": "npm run build"
