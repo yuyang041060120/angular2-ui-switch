@@ -9,10 +9,11 @@
     "removeComments": false,
     "outDir": "dist",
     "rootDir": "src",
+    "declaration": true,
     "noImplicitAny": false
   },
   "include": [
-    "src/**/*"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
