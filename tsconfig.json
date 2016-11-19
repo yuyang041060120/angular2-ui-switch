@@ -7,8 +7,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
+    "outDir": "dist",
+    "rootDir": "src",
     "noImplicitAny": false
   },
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules",
     "example"
