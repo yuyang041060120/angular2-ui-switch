@@ -7,7 +7,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
     "lib": [
       "es6",
       "dom"
@@ -15,8 +17,12 @@
     "types": [
       "node",
       "jasmine"
-    ]
+    ],
+    "noImplicitAny": false
   },
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "example"
