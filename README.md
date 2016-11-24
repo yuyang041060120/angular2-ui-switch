@@ -50,27 +50,6 @@ export class AppModule {
 <ui-switch [checked]="false"></ui-switch>
 ```
 
-### reverse - reverse switch color positions 
-
-> type: *boolean*
-
-> default: false
-
-```html
-<ui-switch reverse="true"></ui-switch>
-```
-
-### switchColor  
-
-> type: *string*
-
-> default: #fff 
-
-
-```html
-<ui-switch switchColor="#fcfcfc"></ui-switch>
-```
-
 ### disabled
 
 > type: *boolean*
@@ -103,6 +82,16 @@ export class AppModule {
 <ui-switch size="large"></ui-switch>
 ```
 
+### reverse 
+
+> type: *boolean*
+
+> default: false
+
+```html
+<ui-switch reverse></ui-switch>
+```
+
 ### color
 
 > type: *string*
@@ -111,6 +100,17 @@ export class AppModule {
 
 ```html
 <ui-switch color="red"></ui-switch>
+```
+
+### switchColor  
+
+> type: *string*
+
+> default: #fff 
+
+
+```html
+<ui-switch switchColor="#fcfcfc"></ui-switch>
 ```
 
 # License

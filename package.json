@@ -1,6 +1,6 @@
 {
-  "name": "angular2-ui-switch-codengamer",
-  "version": "0.0.3",
+  "name": "angular2-ui-switch",
+  "version": "1.2.0",
   "description": "switch button for angular2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -8,16 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --port 4000 --config webpack.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base",
     "example": "webpack --config webpack.config.js --inline --progress --profile --colors --display-error-details --display-cached --content-base",
-    "tsc": "tsc",
+    "tsc": "tsc --rootDir src --outDir dist --declaration",
     "prebuild": "rimraf dist",
     "build": "npm run tsc",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeNgamer/angular2-ui-switch.git"
+    "url": "git+https://github.com/yuyang041060120/angular2-ui-switch.git"
   },
-  "author": "codengamer",
+  "author": "yuyangyang",
   "license": "MIT",
   "keywords": [
     "angular2",
@@ -48,7 +48,7 @@
     "zone.js": "^0.6.12"
   },
   "bugs": {
-    "url": "https://github.com/codeNgamer/angular2-ui-switch/issues"
+    "url": "https://github.com/yuyang041060120/angular2-ui-switch/issues"
   },
-  "homepage": "https://github.com/codeNgamer/angular2-ui-switch#readme"
+  "homepage": "https://github.com/yuyang041060120/angular2-ui-switch#readme"
 }
