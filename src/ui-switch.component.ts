@@ -182,7 +182,7 @@ export class UiSwitchComponent implements ControlValueAccessor {
   }
 
   setDisabledState(isDisabled: boolean): void {
-    this._disabled = isDisabled;
+    this._disabled = isDisabled !== false;
   }
 
 }
