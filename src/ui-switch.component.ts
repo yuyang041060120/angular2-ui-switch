@@ -180,4 +180,9 @@ export class UiSwitchComponent implements ControlValueAccessor {
   registerOnTouched(fn: any) {
     this.onTouchedCallback = fn;
   }
+
+  setDisabledState(isDisabled: boolean): void {
+    this._disabled = isDisabled;
+  }
+
 }
