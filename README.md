@@ -78,6 +78,7 @@ export class AppModule {
 > default: medium
 
 ```html
+<ui-switch size="mini"></ui-switch> // NEW
 <ui-switch size="small"></ui-switch>
 <ui-switch size="large"></ui-switch>
 ```

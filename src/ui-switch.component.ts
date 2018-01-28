@@ -16,6 +16,7 @@ const UI_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
   [class.switch-large]="size === 'large'"
   [class.switch-medium]="size === 'medium'"
   [class.switch-small]="size === 'small'"
+  [class.switch-mini]="size === 'mini'"
   [style.background-color]="getColor()"
   [style.border-color]="getColor('borderColor')"
   >
@@ -82,6 +83,17 @@ const UI_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
     height: 20px;
     }
 
+    .switch-mini {
+    width: 25px;
+    height: 13px;
+    border-radius: 13px;
+    }
+
+    .switch-mini small {
+    width: 13px;
+    height: 13px;
+    }
+
     .checked {
     background: rgb(100, 189, 99);
     border-color: rgb(100, 189, 99);
@@ -97,6 +109,10 @@ const UI_SWITCH_CONTROL_VALUE_ACCESSOR: any = {
 
     .switch-small.checked small {
     left: 13px;
+    }
+
+    .switch-mini.checked small {
+    left: 12px;
     }
 
     .disabled {
@@ -148,7 +164,7 @@ export class UiSwitchComponent implements ControlValueAccessor {
   defaultBgColor: string = '#fff';
   defaultBoColor: string = '#dfdfdf';
 
-  getColor(flag) {
+  getColor(flag?) {
     if (flag === 'borderColor') return this.defaultBoColor;
     if (flag === 'switchColor') {
       if (this.reverse) return !this.checked ? this.switchColor : this.switchOffColor || this.switchColor;
